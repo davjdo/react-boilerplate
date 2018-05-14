@@ -1,0 +1,15 @@
+# config and script
+/config
+/scripts
+
+# registerServiceWorker
+/src/registerServiceWorker.js
+
+# dependencies
+/node_modules
+
+# testing
+/coverage
+
+# production
+/build
