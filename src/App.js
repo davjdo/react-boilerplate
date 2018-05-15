@@ -1,6 +1,6 @@
 import React from 'react';
 import logo from './logo.svg';
-import styles from './App.css';
+import styles from './App.scss';
 
 const App = props => (
   <div className={styles.App}>
@@ -10,6 +10,7 @@ const App = props => (
     </header>
     <p className={styles.intro}>
       To get started, edit <code>src/App.js</code> and save to reload.
+      <div className={styles.test}>bahjqjch</div>
     </p>
   </div>
 );
