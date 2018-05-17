@@ -11,6 +11,8 @@ const eslintFormatter = require('react-dev-utils/eslintFormatter');
 const ModuleScopePlugin = require('react-dev-utils/ModuleScopePlugin');
 const getClientEnvironment = require('./env');
 const paths = require('./paths');
+const StyleLintPlugin = require('stylelint-webpack-plugin');
+const stylelintFormatter = require('stylelint-formatter-pretty');
 
 // Webpack uses `publicPath` to determine where the app is being served from.
 // In development, we always serve from the root. This makes config easier.
@@ -212,6 +214,12 @@ module.exports = {
     ]
   },
   plugins: [
+    new StyleLintPlugin({
+      files: paths.appStyleLintFiles,
+      configFile: paths.appStyleLint,
+      syntax: 'scss',
+      formatter: stylelintFormatter
+    }),
     // Makes some environment variables available in index.html.
     // The public URL is available as %PUBLIC_URL% in index.html, e.g.:
     // <link rel="shortcut icon" href="%PUBLIC_URL%/favicon.ico">

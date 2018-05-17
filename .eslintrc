@@ -2,12 +2,20 @@
   "env": {
     "browser": true,
     "es6": true,
-    "node": true
+    "node": true,
+    "jest": true
   },
-  "extends": ["react-app", "airbnb", "plugin:prettier/recommended"],
+  "plugins": ["prettier"],
+  "extends": ["react-app", "airbnb", "prettier/react"],
   "rules": {
     "no-console": "off",
-    "import/no-extraneous-dependencies": ["error", {"devDependencies": true}],
+    "semi": "off",
+    "import/no-extraneous-dependencies": [
+      "error",
+      {
+        "devDependencies": true
+      }
+    ],
     "comma-dangle": ["error", "never"],
     "no-unused-vars": [
       "warn",
@@ -26,12 +34,13 @@
       "error",
       {
         "singleQuote": true,
-        "tabWidth": 2,
-        "printWidth": 80,
-        "trailingComma": "none",
         "semi": true,
-        "jsxBracketSameLine": false,
-        "bracketSpacing": true
+        "trailingComma": "none",
+        "printWidth": 80,
+        "tabWidth": 2,
+        "bracketSpacing": true,
+        "useTabs": false,
+        "jsxBracketSameLine": false
       }
     ]
   }

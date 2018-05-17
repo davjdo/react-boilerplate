@@ -2,7 +2,6 @@ import React from 'react';
 import { hot } from 'react-hot-loader';
 import logo from './logo.svg';
 import styles from './App.scss';
-import Counter from './components/Counter';
 
 const App = props => (
   <div className={styles.App}>
@@ -14,7 +13,6 @@ const App = props => (
       To get started, edit <code>src/App.js</code> and save to reload.
     </p>
     <div className={styles.test}>bahjqjch</div>
-    <Counter />
   </div>
 );
 
