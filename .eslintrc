@@ -5,8 +5,7 @@
     "node": true,
     "jest": true
   },
-  "plugins": ["prettier"],
-  "extends": ["react-app", "airbnb", "prettier/react"],
+  "extends": ["react-app", "airbnb", "plugin:prettier/recommended"],
   "rules": {
     "no-console": "off",
     "semi": "off",
@@ -30,6 +29,10 @@
         "extensions": [".js", ".jsx"]
       }
     ],
+    "react/prop-types": 0,
+    "indent": [2, "tab"],
+    "no-tabs": 0,
+    "react/jsx-indent": ["error", 0],
     "prettier/prettier": [
       "error",
       {
@@ -37,10 +40,11 @@
         "semi": true,
         "trailingComma": "none",
         "printWidth": 80,
-        "tabWidth": 2,
+        "tabWidth": 4,
         "bracketSpacing": true,
-        "useTabs": false,
-        "jsxBracketSameLine": false
+        "useTabs": true,
+        "jsxBracketSameLine": false,
+        "parser": "babylon"
       }
     ]
   }

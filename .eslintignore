@@ -2,9 +2,6 @@
 /config
 /scripts
 
-# registerServiceWorker
-/src/registerServiceWorker.js
-
 # dependencies
 /node_modules
 
@@ -13,3 +10,6 @@
 
 # production
 /build
+
+# vs code
+/.vscode
