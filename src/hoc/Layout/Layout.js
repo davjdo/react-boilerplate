@@ -1,5 +1,5 @@
 import React from 'react';
-import Aux from '../../hoc/Aux';
+import Aux from '../Aux/Aux';
 
 const Layout = props => (
   <Aux>
